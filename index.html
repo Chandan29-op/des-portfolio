@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chandan Gupta | Graphic Designer Portfolio</title>
+  <meta name="description" content="Chandan Gupta is a graphic designer creating social media posts, carousels and stories for brands.">
+  <meta property="og:title" content="Chandan Gupta | Design Portfolio">
+  <meta property="og:description" content="Social media posts, carousels and stories for brands.">
+  <meta property="og:image" content="images/projects/project-01/post-01.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Special+Elite&family=Caveat:wght@500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="nav">
+    <a class="wordmark" href="#top" aria-label="Chandan Gupta, home">
+      <span class="wm-name"><span data-bind="firstName"></span><br><span data-bind="lastName"></span></span>
+      <span class="wm-sub" data-bind="studio"></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- COVER -->
+    <section class="cover panel-dark" aria-label="Cover">
+      <!-- Tool icons flying in with motion trails (copies are added by main.js) -->
+      <div class="cover-art" aria-hidden="true">
+        <div class="flyer fl-figma" data-flyer="figma"></div>
+        <div class="flyer fl-ps" data-flyer="ps">
+          <svg class="g-orbit" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 7"/></svg>
+        </div>
+        <div class="flyer fl-ai" data-flyer="ai"></div>
+
+        <!-- Pen-tool curve with anchors and handles -->
+        <svg class="g-pen" viewBox="0 0 420 150" fill="none">
+          <path d="M14 120 C 90 10, 200 10, 236 76 S 360 150, 406 30" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M236 76 L 200 10 M236 76 L 272 142" stroke="currentColor" stroke-width="1"/>
+          <circle cx="200" cy="10" r="5" fill="var(--char)" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="272" cy="142" r="5" fill="var(--char)" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="8" y="114" width="12" height="12" fill="var(--char)" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="230" y="70" width="12" height="12" fill="currentColor"/>
+          <rect x="400" y="24" width="12" height="12" fill="var(--char)" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+
+        <!-- Sparkles -->
+        <svg class="g-spark sp-1" viewBox="0 0 40 40"><path d="M20 0 C21 13 27 19 40 20 C27 21 21 27 20 40 C19 27 13 21 0 20 C13 19 19 13 20 0Z" fill="currentColor"/></svg>
+        <svg class="g-spark sp-2" viewBox="0 0 40 40"><path d="M20 0 C21 13 27 19 40 20 C27 21 21 27 20 40 C19 27 13 21 0 20 C13 19 19 13 20 0Z" fill="currentColor"/></svg>
+        <svg class="g-spark sp-3" viewBox="0 0 40 40"><path d="M20 0 C21 13 27 19 40 20 C27 21 21 27 20 40 C19 27 13 21 0 20 C13 19 19 13 20 0Z" fill="currentColor"/></svg>
+      </div>
+
+      <div class="cover-title sel">
+        <span class="sel-h tl"></span><span class="sel-h br"></span>
+        <!-- Multiplayer-style cursor on the resize handle -->
+        <div class="g-cursor" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 2 L20 10.5 L12.2 12.6 L8.6 20 Z" fill="var(--red)" stroke="var(--cream)" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <span data-bind="firstName"></span>
+        </div>
+        <span class="type-label cover-small">Graphic</span>
+        <h1><span>Design</span><span>Portfolio</span></h1>
+        <span class="tag cover-tag" data-bind="fullName"></span>
+        <span class="type-label cover-year" data-bind="year"></span>
+      </div>
+      <span class="mark corner-mark" aria-hidden="true">cg</span>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about panel-paper" id="about">
+      <span class="mark corner-mark" aria-hidden="true">cg</span>
+      <div class="about-grid">
+        <figure class="cutout about-portrait">
+          <img data-img="images/about/profile" data-label="about/profile.png" alt="Chandan Gupta">
+          <span class="tag about-made">made by chandan</span>
+        </figure>
+
+        <div class="about-intro">
+          <div class="about-title-wrap">
+            <h2 class="about-title sel">
+              <span class="sel-h tl"></span><span class="sel-h br"></span>
+              Hi! I’m <span class="accent" data-bind="firstNameShort"></span><span data-bind="firstNameRest"></span> <span data-bind="lastName"></span>
+            </h2>
+            <div class="about-stickers" id="stickers"></div>
+          </div>
+          <div class="about-bio" id="bio"></div>
+        </div>
+
+        <div class="about-cols">
+          <div>
+            <h3 class="col-title">Experience</h3>
+            <ul class="timeline" id="experience"></ul>
+          </div>
+          <div>
+            <h3 class="col-title">Education</h3>
+            <ul class="timeline" id="education"></ul>
+            <h3 class="col-title">Focus</h3>
+            <ul class="focus" id="focus"></ul>
+            <h3 class="col-title">Tools</h3>
+            <ul class="tool-icons" id="tools"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="polaroids" id="polaroids"></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="strip" aria-hidden="true"><div class="strip-track" id="strip"></div></div>
+
+    <!-- CHAPTER COVER -->
+    <section class="chapter panel-dark" id="work">
+      <span class="mark corner-mark" aria-hidden="true">cg</span>
+      <div class="chapter-inner">
+        <div class="chapter-title sel">
+          <span class="sel-h tl"></span><span class="sel-h br"></span>
+          <h2><span class="thin" data-bind="chapter.thin"></span><span class="bold" data-bind="chapter.bold"></span></h2>
+          <span class="tag chapter-tag" data-bind="chapter.tag"></span>
+        </div>
+        <figure class="cutout chapter-photo">
+          <img data-img="images/chapter/chapter" data-label="chapter/chapter.png" alt="">
+        </figure>
+      </div>
+      <nav class="folder-tabs" id="folderTabs" aria-label="Projects"></nav>
+    </section>
+
+    <!-- PROJECTS (built from js/content.js) -->
+    <div id="projects"></div>
+
+    <!-- CONTACT -->
+    <section class="contact panel-dark" id="contact">
+      <div class="contact-logo">
+        <span class="mark big-mark" aria-hidden="true">cg</span>
+        <span class="wm-name big-wm"><span data-bind="firstName"></span><br><span data-bind="lastName"></span><small data-bind="studio"></small></span>
+      </div>
+      <p class="contact-label">Contact me here</p>
+      <ul class="contact-row" id="contactRow"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span data-bind="year"></span> <span data-bind="fullName"></span>. All rights reserved.</p>
+    <a href="#top">Back to top <i class="ph ph-arrow-up"></i></a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lb-btn lb-close" data-lb="close" aria-label="Close"><i class="ph ph-x"></i></button>
+    <button class="lb-btn lb-prev" data-lb="prev" aria-label="Previous"><i class="ph ph-arrow-left"></i></button>
+    <figure class="lb-figure">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" data-lb="next" aria-label="Next"><i class="ph ph-arrow-right"></i></button>
+  </dialog>
+
+  <script src="js/content.js"></script>
+  <script src="js/manifest.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
